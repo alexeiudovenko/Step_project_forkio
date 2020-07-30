@@ -1,0 +1,138 @@
+@import "reset";
+.features {
+    padding-top: 98px;
+    padding-bottom: 38px;
+    font-family: "Montserrat", sans-serif;
+    background: #f4f4f4;
+}
+
+.features__wrap {
+    float: right;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+.features:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.features__heading {
+    position: absolute;
+    left: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #8d81ac;
+}
+
+.features__row--desktop {
+    display: flex;
+}
+
+.features__column--desktop {
+    flex: 50%;
+}
+
+.features__row--tablet {
+    display: flex;
+    width: 92%;
+    margin-bottom: 34px;
+}
+
+.features__img {
+    width: 70%;
+}
+
+.features__text h2 {
+    padding-bottom: 17px;
+    color: #323232;
+}
+
+.features__text p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #848e97;
+}
+
+.features__column--wrap-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.features__column--img {
+    position: absolute;
+    top: 69px;
+    left: -18px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .features__row--desktop {
+        display: block;
+    }
+    .features__heading {
+        position: inherit;
+        padding-top: 62px;
+        padding-bottom: 50px;
+        font-size: 42px;
+        text-align: center;
+    }
+    .features {
+        background: none;
+    }
+    .features__row--tablet {
+        width: 87%;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+    .features__img {
+        width: 40%;
+    }
+    .features__column--img {
+        padding-left: 50px;
+    }
+    .features__column--img {
+        position: inherit;
+        top: 0;
+        left: -15px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .features__row--desktop {
+        display: block;
+    }
+    .features {
+        padding-top: 31px;
+        background: none;
+    }
+    .features__row--tablet {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .features__heading {
+        position: inherit;
+        padding-top: 32px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .features__column--desktop {
+        text-align: center;
+    }
+    .features__img {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    .features__column--img {
+        position: inherit;
+        top: 0;
+        left: -15px;
+        padding-top: 60px;
+    }
+    .features__text h2 {
+        padding-bottom: 0;
+    }
+}
